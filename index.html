@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <div class="container">
+                <div class="nav shadow">
+                    <div class="left-nav">
+                        <a href="#"><svg class="main-nav__logo__image" xmlns="http://www.w3.org/2000/svg" width="45" height="21" viewBox="0 0 45 21"><path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path></svg></a>
+                        <a href="#">Live</a>
+                        <a href="#">Push</a>
+                        <a href="#">Link</a>
+                        <a href="#">Shop</a>
+                        <a href="#">Packs</a>
+                        <a href="#">Help</a>
+                        <a class="text-primary" href="#" v-on:click="moreDropdownClick()">More {{ moreState }}</a>
+                    </div>
+                    <div class="right-nav">
+                        <a class="text-secondary" href="#">Try Live for free</a>
+                        <a href="#">Log in or register</a>
+                    </div>
+                </div>
+                <div class="content shadow">
+                    <div class="main-image">
+                        <img src="ab.jpg" alt="">
+                        <h1 class="text-primary">Ableton</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+</html>
